@@ -1,0 +1,155 @@
+<!Doctype html>
+
+</html>
+<head>
+
+<title> Personal Page wireframe </title>
+
+<style>
+
+.main
+{ background-color:orange;
+  height:100px;
+  width:1345px;
+  border:4px solid;}
+.main h1
+{ color:white;
+  font-size:40px;
+  margin-left:50px;}
+.img1 img
+{ margin-top:-90px;  
+  margin-left:1000px;  
+  border-radius:20px;
+}
+.img2 img
+{ margin-top:-125px;  
+  margin-left:1090px;  
+  border-radius:20px;
+}
+.img3 img
+{ margin-top:-160px;  
+  margin-left:1180px;  
+  border-radius:20px;
+}
+
+.selection
+{ font-size:30px;
+  color:purple;
+  margin-left:200px;
+  margin-top:50px;
+}
+
+  </style>
+  
+<script type="text/JavaScript">
+
+	function validate(theForm) { // passing the form object
+    var val = theForm.textField1.value;
+    if (val=="") { 
+		alert('Please enter your email and message ..!');
+		theForm.textField1.focus();
+		return false; // cancel submission
+  }
+  else{
+		alert('your message has been received . i will back to you soon');
+		theForm.textField1.focus();
+		return true; // allow submit
+	}
+}
+</script>  
+  
+</head>
+
+<body>
+
+<div class = "main">  
+<h1> MOHSIN MUNIR </h1>
+
+ <div class = "img1">
+ <a href="https://www.facebook.com/" /> 
+ <img src="facebook-icon.gif" height="50px" width="50px" align="center"/></a>
+ </div>
+
+ <div class = "img2">
+ <a href="https://twitter.com/?lang=en" /> 
+ <img src="twitter-logo1.jpg" height="50px" width="50px" align="center"/></a>
+ </div>
+
+ <div class = "img3">
+ <a href="https://login.yahoo.com/" > 
+ <img src="emailsmall.png" height="50px" width="50px" align="center" /></a>
+ </div>
+</div>
+
+<img src="25.jpg" height="400px" width="1353px" align="center">
+
+<div class="selection">
+<a href="#About"> About Me </a> &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="#prog"> Programming Skills </a> &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="#hob"> Hobbies </a> &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="#contact"> Contact me </a>
+</div>
+
+<a name="About"></a><h1><font text color="purple"><u> About Me : </u></font></h1>
+<p>
+<b>Hy, I am Mohsin Munir. I have passed my Matric from "F.G Boys Public school" 
+Bahawalpur Cantt. I have passed my FSc(pre engineering) from "National Collage
+of Science and Information Tech." and now I am studying in "Islamia University
+Bahawalpur".
+&nbsp<br> &nbsp<br>
+The name of my course is "BSIT".I am currently studying in 6th smester.I want
+to become a network engineer.But I am also interested in web development and 
+designing.
+&nbsp<br>
+I will do my best to achieve my goal.  </b>
+</p>
+
+<a name="prog"></a><h1><font text color="purple"><u> Programming Skills : </u></font></h1>
+<b> Some of my skills in computer are listed below ; </b>
+<ul>
+<li> C++ </li>
+<li> Java </li>
+<li> Html </li>
+<li> Java Script </li>
+</ul>
+
+<a name="hob"></a><h1><font text color="purple"><u> Hobbies : </u></font></h1>
+<ol>
+<li> Playing Cricket </li>
+<li> Football </li>
+<li> Watching Movies </li>
+<li> Reading Books </li>
+<li> Watching TV </li>
+</ol>
+
+<a name="contact"></a><h1><font text color="purple"><u> Contact Me : </u></font></h1>
+<b> Address : </b>  <br>
+House no.1/1, MES Colony Ayub Line Bahawalpur Cantt.    &nbsp<br>&nbsp<br>
+<b> Email : </b>    <br>
+mosinmunir1996@yahoo.com                                &nbsp<br>&nbsp<br>
+<b> Phone : </b>    <br>
++92 3154663080      &nbsp<br>&nbsp<br>
+
+You can directly send me message below, <br>
+&nbsp<br>&nbsp<br> &nbsp<br>&nbsp<br>
+
+
+<form onsubmit="return validate(this)">
+<b> Email : </b>  &nbsp&nbsp&nbsp
+<input type="Email" name="textField1" maxlength="30" value="" /> 
+</br> </br> </br>
+<b> Message : </b>
+<textarea name="Message1"  rows="8" cols="50" >  </textarea>
+ 
+
+&nbsp<br>&nbsp<br>&nbsp<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<input type="submit" value="submit"  />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" value="reset" />
+</form>
+
+</body>
+</html>
